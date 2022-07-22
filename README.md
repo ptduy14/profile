@@ -1,2 +1,2 @@
 # profile
-link: https://ptduy14.github.io/portfolio/
+link demo: https://ptduy14.github.io/profile/
