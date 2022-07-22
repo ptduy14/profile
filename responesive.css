@@ -1,0 +1,134 @@
+@media (max-width: 729px){
+    .main{
+        width: 95%;
+    }
+    .body-content-nav li {
+        padding: 20px 9px;
+    }
+    .body-content-nav li p{
+        font-size: 18px;
+    }
+    .content-bio{
+        flex-direction: column;
+        position: relative;
+    }
+    .content-bio-left{
+        width: 100%;
+        border: none;
+    }
+    .content-bio-right{
+        display: none;
+    }
+
+    .content-ex ul li .year{
+        width: 41%;
+        text-align: center;
+    }
+    .content-ex ul li .school{
+        width: 59%;
+    }
+    .content-ex ul::before{
+        left: 22%;
+    }
+    .content-project ul .project-item{
+        margin-right: 9px;
+    }
+    .content-project ul .project-item .langue{
+        line-height: 1.5;
+    }
+
+    .content-skill .skill-item .skill-name{
+        width: 25%;
+    }
+    .content-skill .skill-item .persent-number{
+        width: 15%;
+    }
+    .content-skill .skill-item .skill-pesent{
+        width: calc(var(--persent) * 0.6);
+    }
+    @keyframes growth{
+        from{
+            opacity: 0;
+            width: 0%;
+        }
+        to{
+            opacity: 1;
+            width: calc(var(--persent) * 0.6);
+        }
+    }
+
+    .btn-more{
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        font-style: italic;
+        padding: 10px 10px;
+        background-color:#161c2a;
+        border-radius: 10px;
+    }
+    .btn-more i{
+        font-style: italic;
+    }
+    .more-info-box{
+        display: block;
+        position: fixed;
+        width: 80%;
+        margin: 0 auto;
+        background-color: #2b3446;
+        top: -100%;
+        left: 0;
+        right: 0;
+        height: 60vh;
+        z-index: 9999;
+        padding: 30px 20px 10px 20px;
+        line-height: 1.5;
+        border-radius: 10px;
+        opacity: 0;
+        transition: all 1s ease;
+    }
+    .more-info-box.active{
+        top: 128px;
+        opacity: 1;
+    }
+    .more-info-box h3{
+        margin-top: 20px;
+    }
+    .overlay{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 999;
+    }
+    .overlay.active{
+        display: block;
+    }
+    .contact-box{
+        margin-top: 10px;
+    }
+    .contact-box-row{
+        margin-bottom: 5px;
+    }
+    .contact-box-row i{
+        padding: 10px 10px ;
+        background-color: #161c2a;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+    .close-more-info{
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 8px;
+    }
+    .social-box{
+        display: none;
+    }
+    .contact__form{
+        width: 100%;
+    }
+}
